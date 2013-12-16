@@ -1,0 +1,122 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestMAPI", "TestMAPI\TestMAPI.vcxproj", "{16010049-2F30-487E-A08A-E4EFCEBDF1F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAPIEx", "MAPIEx\MAPIEx.vcxproj", "{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMAPI", "NetMAPI\NetMAPI.csproj", "{42C62FE2-C8EE-48E0-92FA-CDE813E93092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetMAPI", "TestNetMAPI\TestNetMAPI.csproj", "{362944A1-644A-447F-9261-9D463E8C959F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B} = {DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAPIExLib", "MAPIEx\MAPIExLib.vcxproj", "{7652DB87-E98F-4BA3-B16B-9A577F2158E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAPIService", "MAPIService\MAPIService.vcxproj", "{3C7660A1-C170-4124-B28C-EE3BE6ED310F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Pocket PC 2003 (ARMV4) = Debug|Pocket PC 2003 (ARMV4)
+		Debug|Smartphone 2003 (ARMV4) = Debug|Smartphone 2003 (ARMV4)
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Pocket PC 2003 (ARMV4) = Release|Pocket PC 2003 (ARMV4)
+		Release|Smartphone 2003 (ARMV4) = Release|Smartphone 2003 (ARMV4)
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Pocket PC 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Debug|Win32.Build.0 = Debug|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Any CPU.ActiveCfg = Release|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Pocket PC 2003 (ARMV4).ActiveCfg = Release|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Win32.ActiveCfg = Release|Win32
+		{16010049-2F30-487E-A08A-E4EFCEBDF1F9}.Release|Win32.Build.0 = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Pocket PC 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Debug|Win32.Build.0 = Debug|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Pocket PC 2003 (ARMV4).ActiveCfg = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Win32.ActiveCfg = Release|Win32
+		{DE52A7AC-9D4F-4A65-BBCC-7CEB413A186B}.Release|Win32.Build.0 = Release|Win32
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Pocket PC 2003 (ARMV4).ActiveCfg = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Pocket PC 2003 (ARMV4).ActiveCfg = Release|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Any CPU
+		{42C62FE2-C8EE-48E0-92FA-CDE813E93092}.Release|Win32.ActiveCfg = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Pocket PC 2003 (ARMV4).ActiveCfg = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Pocket PC 2003 (ARMV4).ActiveCfg = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Any CPU
+		{362944A1-644A-447F-9261-9D463E8C959F}.Release|Win32.ActiveCfg = Release|Any CPU
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Pocket PC 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Debug|Win32.Build.0 = Debug|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Pocket PC 2003 (ARMV4).ActiveCfg = Release|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Win32.ActiveCfg = Release|Win32
+		{7652DB87-E98F-4BA3-B16B-9A577F2158E9}.Release|Win32.Build.0 = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Pocket PC 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Smartphone 2003 (ARMV4).ActiveCfg = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Debug|Win32.Build.0 = Debug|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Pocket PC 2003 (ARMV4).ActiveCfg = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Smartphone 2003 (ARMV4).ActiveCfg = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Win32.ActiveCfg = Release|Win32
+		{3C7660A1-C170-4124-B28C-EE3BE6ED310F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
