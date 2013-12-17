@@ -267,61 +267,61 @@ namespace MAPIEx
 
         #region DLLCalls
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void ObjectClose(IntPtr pObject);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSave(IntPtr pObject, bool bClose);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int ObjectGetMessageFlags(IntPtr pObject);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetEntryID(IntPtr pObject, StringBuilder strEntryID, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetMessageClass(IntPtr pObject, StringBuilder szMessageClass, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int ObjectGetMessageEditorFormat(IntPtr pObject);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetPropertyString(IntPtr pObject, uint ulProperty, StringBuilder strProperty, int nMaxLength, bool bStream);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetNamedProperty(IntPtr pObject, string strFieldName, StringBuilder strField, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetBody(IntPtr pObject, out IntPtr szBody, bool bAutoDetect);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetHTML(IntPtr pObject, out IntPtr szHTML);
         
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectGetRTF(IntPtr pObject, out IntPtr szRTF);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void ObjectFreeBody();
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetMessageFlags(IntPtr pObject, int nFlags);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetMessageEditorFormat(IntPtr pObject, int nFormat);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetPropertyString(IntPtr pObject, uint ulProperty, string strProperty, bool bStream);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetNamedProperty(IntPtr pObject, string strFieldName, string strField, bool bCreate);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetBody(IntPtr pObject, string strBody);
         
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetHTML(IntPtr pObject, string strHTML);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ObjectSetRTF(IntPtr pObject, string strRTF);
 
         #endregion

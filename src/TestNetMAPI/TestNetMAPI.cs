@@ -56,6 +56,7 @@ namespace TestNetMAPI
                 }
                 NetMAPI.Term();
             }
+            Console.ReadLine();
         }
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -240,7 +241,7 @@ namespace TestNetMAPI
             if (mapi.OpenInbox() && mapi.GetContents())
             {
                 mapi.SortContents(false);
-                mapi.SetUnreadOnly(true);
+                mapi.SetUnreadOnly(false);
 
                 MAPIMessage message;
                 StringBuilder s = new StringBuilder(NetMAPI.DefaultBufferSize);

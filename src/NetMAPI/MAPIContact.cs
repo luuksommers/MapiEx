@@ -671,199 +671,199 @@ namespace MAPIEx
 
         #region DLLCalls
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactCreate(IntPtr pMAPI, out IntPtr pContact, IntPtr pFolder);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetName(IntPtr pContact, StringBuilder strName, int nMaxLength, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetEmail(IntPtr pContact, StringBuilder strEmail, int nMaxLength, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetEmailDisplayAs(IntPtr pContact, StringBuilder strDisplayAs, int nMaxLength, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetHomePage(IntPtr pContact, StringBuilder strHomePage, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetIMAddress(IntPtr pContact, StringBuilder strIMAddress, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetProfession(IntPtr pContact, StringBuilder strProfession, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetPhoneNumber(IntPtr pContact, StringBuilder strPhoneNumber, int nMaxLength, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetAddress(IntPtr pContact, out IntPtr pAddress, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetPostalAddress(IntPtr pContact, StringBuilder strAddress, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int ContactGetNotesSize(IntPtr pContact, bool bRTF);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetNotes(IntPtr pContact, StringBuilder strNotes, int nMaxLength, bool bRTF);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int ContactGetSensitivity(IntPtr pContact);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetTitle(IntPtr pContact, StringBuilder strTitle, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetCompany(IntPtr pContact, StringBuilder strCompany, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetDisplayNamePrefix(IntPtr pContact, StringBuilder strDisplayNamePrefix, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetGeneration(IntPtr pContact, StringBuilder strGeneration, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetDepartment(IntPtr pContact, StringBuilder strDepartment, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetOffice(IntPtr pContact, StringBuilder strOffice, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetManagerName(IntPtr pContact, StringBuilder strManagerName, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetAssistantName(IntPtr pContact, StringBuilder strAssistantName, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetNickName(IntPtr pContact, StringBuilder strNickName, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetSpouseName(IntPtr pContact, StringBuilder strSpouseName, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetBirthday(IntPtr pContact, out int nYear, out int nMonth, out int nDay);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetAnniversary(IntPtr pContact, out int nYear, out int nMonth, out int nDay);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactGetCategories(IntPtr pContact, StringBuilder strField, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetName(IntPtr pContact, string strName, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetEmail(IntPtr pContact, string strEmail, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetEmailDisplayAs(IntPtr pContact, string strDisplayAs, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetHomePage(IntPtr pContact, string strHomePage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetIMAddress(IntPtr pContact, string strIMAddress);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetProfession(IntPtr pContact, string strProfession);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetPhoneNumber(IntPtr pContact, string strPhoneNumber, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetAddress(IntPtr pContact, IntPtr pAddress, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetPostalAddress(IntPtr pContact, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactUpdateDisplayAddress(IntPtr pContact, int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetNotes(IntPtr pContact, string strNotes, bool bRTF);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetSensitivity(IntPtr pContact, int nSensitivity);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetFileAs(IntPtr pContact, string strFileAs);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetTitle(IntPtr pContact, string strTitle);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetCompany(IntPtr pContact, string strCompany);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetDisplayNamePrefix(IntPtr pContact, string strPrefix);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetGeneration(IntPtr pContact, string strGeneration);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactUpdateDisplayName(IntPtr pContact);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetDepartment(IntPtr pContact, string strDepartment);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetOffice(IntPtr pContact, string strOffice);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetManagerName(IntPtr pContact, string strManagerName);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetAssistantName(IntPtr pContact, string strAssistantName);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetNickName(IntPtr pContact, string strNickName);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetSpouseName(IntPtr pContact, string strSpouseName);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetBirthday(IntPtr pContact, int nYear, int nMonth, int nDay);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetAnniversary(IntPtr pContact, int nYear, int nMonth, int nDay);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetCategories(IntPtr pContact, string strCategories);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool ContactSetPicture(IntPtr pContact, string strPath);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressClose(IntPtr pAddress);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressGetStreet(IntPtr pAddress, StringBuilder strStreet, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressGetCity(IntPtr pAddress, StringBuilder strCity, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressGetStateOrProvince(IntPtr pAddress, StringBuilder strStateOrProvince, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressGetPostalCode(IntPtr pAddress, StringBuilder strPostalCode, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressGetCountry(IntPtr pAddress, StringBuilder strCountry, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressSetStreet(IntPtr pAddress, string strStreet);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressSetCity(IntPtr pAddress, string strCity);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressSetStateOrProvince(IntPtr pAddress, string strStateOrProvince);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressSetPostalCode(IntPtr pAddress, string strPostalCode);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void AddressSetCountry(IntPtr pAddress, string strCountry);
 
         #endregion

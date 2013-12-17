@@ -166,34 +166,34 @@ namespace MAPIEx
 
         #region DLLCalls
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentGetSubject(IntPtr pAppointment, StringBuilder strSubject, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentGetLocation(IntPtr pAppointment, StringBuilder strLocation, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentGetStartTime(IntPtr pAppointment, out int nYear, out int nMonth, out int nDay, out int nHour, out int nMinute, out int nSecond);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentGetStartTimeString(IntPtr pAppointment, StringBuilder strStartTime, int nMaxLength, string szFormat);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentGetEndTime(IntPtr pAppointment, out int nYear, out int nMonth, out int nDay, out int nHour, out int nMinute, out int nSecond);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentGetEndTimeString(IntPtr pAppointment, StringBuilder strEndTime, int nMaxLength, string szFormat);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentSetSubject(IntPtr pAppointment, string strSubject);
-        
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentSetLocation(IntPtr pAppointment, string strLocation);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentSetStartTime(IntPtr pAppointment, int nYear, int nMonth, int nDay, int nHour, int nMinute, int nSecond);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool AppointmentSetEndTime(IntPtr pAppointment, int nYear, int nMonth, int nDay, int nHour, int nMinute, int nSecond);
 
         #endregion

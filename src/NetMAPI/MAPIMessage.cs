@@ -547,118 +547,118 @@ namespace MAPIEx
 
         #region DLLCalls
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageCreate(IntPtr pMAPI, out IntPtr pMessage, int nImportance, bool bSaveToSentFolder, IntPtr pFolder);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSend(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int MessageShowForm(IntPtr pMAPI, IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageIsUnread(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageMarkAsRead(IntPtr pMessage, bool bRead);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetHeader(IntPtr pMessage, StringBuilder strHeader, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void MessageGetSenderName(IntPtr pMessage, StringBuilder strSenderName, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void MessageGetSenderEmail(IntPtr pMessage, StringBuilder strSenderEmail, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void MessageGetSubject(IntPtr pMessage, StringBuilder strSubject, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetReceivedTime(IntPtr pMessage, out int nYear, out int nMonth, out int nDay, out int nHour, out int nMinute, out int nSecond);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetReceivedTimeString(IntPtr pMessage, StringBuilder strReceivedTime, int nMaxLength, string szFormat);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetSubmitTime(IntPtr pMessage, out int nYear, out int nMonth, out int nDay, out int nHour, out int nMinute, out int nSecond);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetSubmitTimeString(IntPtr pMessage, StringBuilder strSubmitTime, int nMaxLength, string szFormat);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetTo(IntPtr pMessage, StringBuilder strTo, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetCC(IntPtr pMessage, StringBuilder strCC, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetBCC(IntPtr pMessage, StringBuilder strBCC, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int MessageGetSensitivity(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int MessageGetPriority(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int MessageGetImportance(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetRecipients(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetNextRecipient(IntPtr pMessage, StringBuilder strName, int nMaxLenName, StringBuilder strEmail, int nMaxLenEmail, out int nType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetReplyTo(IntPtr pMessage, StringBuilder strEmail, int nMaxLength);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern int MessageGetAttachmentCount(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetAttachmentCID(IntPtr pMessage, StringBuilder strAttachmentCID, int nMaxLength, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageGetAttachmentName(IntPtr pMessage, StringBuilder strAttachmentName, int nMaxLength, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSaveAttachment(IntPtr pMessage, string strFolder, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageDeleteAttachment(IntPtr pMessage, int nIndex);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSetMessageStatus(IntPtr pMessage, int nMessageStatus);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageAddRecipient(IntPtr pMessage, string strEmail, int nType, string strAddrType);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void MessageSetSubject(IntPtr pMessage, string strSubject);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern void MessageSetSender(IntPtr pMessage, string strSenderName, string strSenderEmail);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSetReceivedTime(IntPtr pMessage, int nYear, int nMonth, int nDay, int nHour, int nMinute, int nSecond, bool bLocal);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSetSubmitTime(IntPtr pMessage, int nYear, int nMonth, int nDay, int nHour, int nMinute, int nSecond, bool bLocal);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageAddAttachment(IntPtr pMessage, string strPath, string strName, string strCID);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSetReadReceipt(IntPtr pMessage, bool bSet, string strReceiverEmail);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSetDeliveryReceipt(IntPtr pMessage, bool bSet);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageMarkAsPrivate(IntPtr pMessage);
 
-        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet)]
+        [DllImport(NetMAPI.MAPIExDLL, CharSet = NetMAPI.DefaultCharSet, CallingConvention = NetMAPI.DefaultCallingConvention)]
         protected static extern bool MessageSetSensitivity(IntPtr pMessage, int nSensitivity);
 
         #endregion
