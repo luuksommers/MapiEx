@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>MapiEx</id>
+    <version>0.0.2</version>
+    <authors>Noel Dillabough, Luuk Sommers</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MapiEx is a Extended Mapi wrapper for c#.</description>
+    <summary>MapiEx is a Extended Mapi wrapper for c#.</summary>
+    <projectUrl>https://github.com/luuksommers/MapiEx/</projectUrl>
+    <tags>Extended Mapi</tags>
+  </metadata>
+  <files>
+    <file src="..\NetMapi\bin\Release\NetMapi.dll" target="lib\net40" />
+    <file src="..\MAPIEx\Release\MapiEx.dll" target="content\net40\x86" />
+    <file src="install.ps1" target="tools" />
+  </files>
+</package>
